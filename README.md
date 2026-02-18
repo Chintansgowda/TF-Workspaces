@@ -103,7 +103,7 @@ cd TF-Workspaces
 
 ---
 
-### 2️⃣ Initialize Terraform
+### 2️ Initialize Terraform
 
 ```
 terraform init
@@ -111,7 +111,7 @@ terraform init
 
 ---
 
-### 3️⃣ Create Workspaces
+### 3️ Create Workspaces
 
 ```
 terraform workspace new dev
@@ -121,7 +121,7 @@ terraform workspace new prod
 
 ---
 
-### 4️⃣ Apply Infrastructure Per Environment
+### 4️ Apply Infrastructure Per Environment
 
 For dev:
 
@@ -146,7 +146,7 @@ terraform apply -var-file="prod.tfvars"
 
 ---
 
-## 🧹 Destroy Infrastructure
+##  Destroy Infrastructure
 
 To destroy infrastructure for a specific workspace:
 
@@ -159,7 +159,7 @@ Each workspace destroys only its own resources.
 
 ---
 
-## 🔐 SSH Key Management
+##  SSH Key Management
 
 SSH keys are generated locally and uploaded to AWS using Terraform.
 
@@ -183,7 +183,7 @@ Key pairs are prefixed with workspace name to prevent duplication:
 
 ---
 
-## 📤 Outputs
+##  Outputs
 
 The module exposes:
 
@@ -200,7 +200,7 @@ module.workspace_vm_s3.instance_public_dns
 
 ---
 
-## 🏗 Best Practices Implemented
+##  Best Practices Implemented
 
 * Modular design
 * Workspace-based environment isolation
@@ -211,7 +211,7 @@ module.workspace_vm_s3.instance_public_dns
 
 ---
 
-## 📌 Important Notes
+##  Important Notes
 
 * S3 bucket names are globally unique
 * Key pairs are region-specific
@@ -220,7 +220,7 @@ module.workspace_vm_s3.instance_public_dns
 
 ---
 
-## 🎯 Learning Objectives Demonstrated
+##  Learning Objectives Demonstrated
 
 * Terraform Workspaces
 * for_each vs count
@@ -231,10 +231,9 @@ module.workspace_vm_s3.instance_public_dns
 
 ---
 
-## 📜 License
+##  License
 
 This project is for learning and demonstration purposes.
 
 ---
 
-# End of TF-Workspaces README
